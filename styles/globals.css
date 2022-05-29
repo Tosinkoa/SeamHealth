@@ -1,16 +1,57 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*-----------------Table-------------------*/
+
+.table_title_background {
+  @apply font-logo-font flex flex-col justify-center mx-auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.table_title {
+  @apply text-2xl  mx-auto text-center text-indigo-600 my-4;
 }
 
-* {
-  box-sizing: border-box;
+.table_sec_title {
+  @apply font-my-font font-bold mb-4 bg-indigo-800 mx-auto text-center text-white text-sm sm:w-2/6 hover:bg-indigo-700 active:bg-indigo-700 active:text-base  transition-all hover:shadow-md  focus:text-base delay-100 ease-in-out lg:w-1/12 rounded-xl p-2;
+}
+
+.table {
+  @apply w-full lg:text-sm sm:text-xs  sm:text-left md:text-center  text-gray-500;
+}
+
+.table_head {
+  @apply text-xs text-gray-700 w-11/12 justify-center uppercase;
+}
+
+.row_head_icon_bg {
+  @apply bg-gray-200 rounded-full p-1 ml-2 flex;
+}
+
+.table_row {
+  @apply md:font-bold sm:font-semibold;
+}
+
+.table_head_row {
+  @apply lg:px-6 sm:px-2 py-2 text-left w-1/5;
+}
+
+/* .table_head_row {
+  @apply bg-white border-b hover:bg-gray-50;
+} */
+
+.table_head_row {
+  @apply border-b max-w-fit;
+}
+
+.table_head_row_text {
+  @apply lg:px-6 sm:px-2 py-4  font-medium text-gray-900;
+}
+
+.table_data {
+  @apply lg:px-6 sm:px-2 py-2 text-left w-1/5;
+}
+
+.table_detail {
+  @apply font-medium inline-flex text-blue-500 hover:underline;
 }
