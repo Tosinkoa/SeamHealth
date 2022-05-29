@@ -12,7 +12,7 @@ import { useAllUserQuery, usePostUserMutation } from "../store/fetcherApi";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [phone, setPhone] = useState();
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   useEffect(() => setMounted(true), []);
   const { data: allUsers, isLoading } = useAllUserQuery();
   const [postUser] = usePostUserMutation();
@@ -25,9 +25,9 @@ export default function Home() {
         <div>
           <div className=" z-10 absolute w-full ">
             {/* <h1>Register New Doctor</h1> */}
-            <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+            {/* <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
               Toggle {theme === "light" ? "Dark" : "Light"}
-            </button>
+            </button> */}
             <Formik
               onSubmit={(values) => {
                 const allValues = { ...values, phone };
