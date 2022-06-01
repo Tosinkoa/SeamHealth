@@ -26,7 +26,7 @@ const Table = ({ allUsers, formData }) => {
         </div>
       </div>
       <TableFilter filter={globalFilter} setFilter={setGlobalFilter} />
-      <div className=" w-11/12 object-contain mt-10 mx-auto my-10">
+      <div className=" md:w-11/12 sm:w-full mt-10 mx-auto my-10">
         <table className="table table-auto dark:border" {...getTableProps()}>
           <thead className="table_head ">
             {headerGroups.map((headerGroup) => (

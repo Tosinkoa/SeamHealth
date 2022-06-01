@@ -17,11 +17,11 @@
 }
 
 .table {
-  @apply w-full lg:text-sm sm:text-xs  sm:text-left md:text-center;
+  @apply w-full lg:text-sm sm:text-xs sm:text-left md:text-center;
 }
 
 .table_head {
-  @apply text-xs  w-11/12 justify-center uppercase;
+  @apply text-xs w-11/12 justify-center uppercase;
 }
 
 .row_head_icon_bg {
@@ -37,7 +37,7 @@
 }
 
 .table_head_row {
-  @apply border-b max-w-xl;
+  @apply border-b w-fit;
 }
 
 .table_head_row_text {
