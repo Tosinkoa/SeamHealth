@@ -17,11 +17,11 @@
 }
 
 .table {
-  @apply w-full lg:text-sm sm:text-xs  sm:text-left md:text-center  text-gray-500;
+  @apply w-full lg:text-sm sm:text-xs  sm:text-left md:text-center;
 }
 
 .table_head {
-  @apply text-xs text-gray-700 w-11/12 justify-center uppercase;
+  @apply text-xs  w-11/12 justify-center uppercase;
 }
 
 .row_head_icon_bg {
@@ -41,7 +41,7 @@
 }
 
 .table_head_row_text {
-  @apply lg:px-6 sm:px-2 py-4  font-medium text-gray-900;
+  @apply lg:px-6 sm:px-2 py-4  font-medium;
 }
 
 .table_data {
@@ -56,4 +56,3 @@
 .mylabel {
   @apply font-bold mb-2;
 }
-
