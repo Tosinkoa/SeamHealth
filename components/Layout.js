@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Header from "./Header";
 
 const Layout = ({ title, description, keywords, children }) => {
   return (
@@ -10,7 +9,6 @@ const Layout = ({ title, description, keywords, children }) => {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <div className="overflow-hidden">{children}</div>
     </div>
   );

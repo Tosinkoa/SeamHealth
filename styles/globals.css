@@ -36,12 +36,8 @@
   @apply lg:px-6 sm:px-2 py-2 text-left w-1/5;
 }
 
-/* .table_head_row {
-  @apply bg-white border-b hover:bg-gray-50;
-} */
-
 .table_head_row {
-  @apply border-b max-w-fit;
+  @apply border-b max-w-xl;
 }
 
 .table_head_row_text {
@@ -49,9 +45,15 @@
 }
 
 .table_data {
-  @apply lg:px-6 sm:px-2 py-2 text-left w-1/5;
+  @apply lg:px-6 sm:px-2 py-2 text-left max-w-fit;
 }
 
 .table_detail {
   @apply font-medium inline-flex text-blue-500 hover:underline;
 }
+
+/*-----------------Table-------------------*/
+.mylabel {
+  @apply font-bold mb-2;
+}
+
