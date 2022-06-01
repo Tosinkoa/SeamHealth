@@ -9,6 +9,10 @@ const RegisterDoctor = ({ submitForm }) => {
   //--------------------Validate all fields----------------------------
   const formValidator = Yup.object({
     name: Yup.string().required("Name is required").min(2, "Name is too short").max(20, "Name must be max of 20 chars"),
+    username: Yup.string()
+      .required("Username is required")
+      .min(2, "Username is too short")
+      .max(20, "Username must be max of 20 chars"),
     phone: Yup.string()
       .required("Phone is required")
       .min(11, "Phone must be 11 digits")
