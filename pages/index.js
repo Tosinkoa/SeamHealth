@@ -17,7 +17,7 @@ export default function Home() {
     toast.success("Doctor registered successfully");
     setSecondTableBodyData((prevFields) => {
       const updatedFields = [...prevFields];
-      updatedFields.push({
+      updatedFields.unshift({
         name: values.name,
         username: values.username,
         email: values.email,
