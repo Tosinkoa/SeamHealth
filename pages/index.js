@@ -4,6 +4,7 @@ import { useAllUserQuery, usePostUserMutation } from "../store/fetcherApi";
 import RegisterDoctor from "../components/RegisterDoctor";
 import { toast } from "react-toastify";
 import { useState } from "react";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const { data: allUsers, isLoading } = useAllUserQuery();
@@ -33,7 +34,7 @@ export default function Home() {
     <Layout>
       <div>
         <RegisterDoctor submitForm={submitForm} />
-        {isLoading && !allUsers && !secondTableBodyData && <p>Loading</p>}
+        {isLoading && !allUsers && !secondTableBodyData && <Loading />}
         {allUsers && !isLoading && secondTableBodyData && (
           <Table allUsers={allUsers} secondTableBodyData={secondTableBodyData} />
         )}
