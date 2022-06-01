@@ -9,7 +9,7 @@ const Layout = ({ title, description, keywords, children }) => {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="overflow-hidden">{children}</div>
+      <div className="overflow-hidden bg-gray-50">{children}</div>
     </div>
   );
 };

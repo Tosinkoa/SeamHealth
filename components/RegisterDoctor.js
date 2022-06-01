@@ -69,12 +69,42 @@ const RegisterDoctor = () => {
             {() => {
               return (
                 <Form className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-11/12 mx-auto gap-5 py-4">
-                  <MyInput className="border-2 w-full p-2 rounded-xl" name="name" label="Name" type="text" />
-                  <MyInput className="border-2 w-full  p-2 rounded-xl" name="username" label="Username" type="text" />
-                  <MyInput className="border-2 w-full  p-2 rounded-xl" name="email" label="Email" type="email " />
-                  <MyInput className="border-2 w-full  p-2 rounded-xl" name="phone" label="Phone" type="tel" />
-                  <MyInput className="border-2 w-full  p-2 rounded-xl" name="city" label="City" type="text" />
-                  <MyInput className="border-2 w-full  p-2 rounded-xl" name="website" label="Website" type="text" />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full p-2 rounded-xl"
+                    name="name"
+                    label="Name"
+                    type="text"
+                  />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full  p-2 rounded-xl"
+                    name="username"
+                    label="Username"
+                    type="text"
+                  />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full  p-2 rounded-xl"
+                    name="email"
+                    label="Email"
+                    type="email "
+                  />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full  p-2 rounded-xl"
+                    name="phone"
+                    label="Phone"
+                    type="tel"
+                  />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full  p-2 rounded-xl"
+                    name="city"
+                    label="City"
+                    type="text"
+                  />
+                  <MyInput
+                    className="border-2 border-gray-400 bg-gray-200 w-full  p-2 rounded-xl"
+                    name="website"
+                    label="Website"
+                    type="text"
+                  />
                   <button
                     className="border rounded-md w-24 px-4 py-2 font-bold text-center bg-green-600 border-gray-500 text-gray-50 shadow-md hover:bg-green-500 hover:text-white"
                     type="submit"

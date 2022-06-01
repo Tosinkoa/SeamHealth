@@ -33,7 +33,7 @@
 }
 
 .table_head_row {
-  @apply lg:px-6 sm:px-2 py-2 text-left w-1/5;
+  @apply lg:px-4 sm:px-2 py-2 text-left w-1/5;
 }
 
 .table_head_row {
