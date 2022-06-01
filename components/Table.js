@@ -49,10 +49,10 @@ const Table = ({ allUsers, secondTableBodyData }) => {
               </tr>
             ))}
           </thead>
-          {/* ---------------Data that belongs to the server------------- */}
-          <tbody {...firstTableBodyProps()}>
-            {firstRows?.map((row, i) => {
-              firstPrepareRow(row);
+          {/* ---------------Data that can't be store on the server------------- */}
+          <tbody {...secondGetTableBodyProps()}>
+            {secondRows?.map((row, i) => {
+              secondPrepareRow(row);
               return (
                 <tr className="table_head_row" {...row.getRowProps()}>
                   {row.cells.map((cell) => {
@@ -66,10 +66,10 @@ const Table = ({ allUsers, secondTableBodyData }) => {
               );
             })}
           </tbody>
-          {/* ---------------Data that can't be store on the server------------- */}
-          <tbody {...secondGetTableBodyProps()}>
-            {secondRows?.map((row, i) => {
-              secondPrepareRow(row);
+          {/* ---------------Data that belongs to the server------------- */}
+          <tbody {...firstTableBodyProps()}>
+            {firstRows?.map((row, i) => {
+              firstPrepareRow(row);
               return (
                 <tr className="table_head_row" {...row.getRowProps()}>
                   {row.cells.map((cell) => {
