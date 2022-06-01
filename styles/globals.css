@@ -4,6 +4,20 @@
 
 /*----------------COMPONENT-----------------COMPONENT------------------COMPONENT-----------------*/
 
+/*-----------------CardTitle-------------------*/
+
+.register_doctor_button {
+  @apply border rounded-md w-24 px-4 py-2 font-bold text-center bg-green-600 border-gray-500 text-gray-50 shadow-md hover:bg-green-500 hover:text-white;
+}
+
+.title_background {
+  @apply font-bold text-xl m-3 w-full text-center;
+}
+
+.card_title_background {
+  @apply flex justify-between sm:px-7 lg:px-12 bg-green-600 shadow-lg text-gray-50 rounded-lg sm:w-full lg:w-2/5 mx-auto mb-5;
+}
+
 /*-----------------Table-------------------*/
 
 .table_main_background {
@@ -71,26 +85,12 @@
   @apply flex sm:w-11/12 lg:w-8/12 mt-5 mx-auto relative;
 }
 
-.search_icon{
-@apply absolute text-2xl top-2.5 left-5
+.search_icon {
+  @apply absolute text-2xl top-2.5 left-5;
 }
 
-.input_filter{
-@apply border-2 border-gray-400 mx-2 rounded-xl w-full py-2 pl-10
-}
-
-/*-----------------CardTitle-------------------*/
-
-.register_doctor_button {
-  @apply border rounded-md w-24 px-4 py-2 font-bold text-center bg-green-600 border-gray-500 text-gray-50 shadow-md hover:bg-green-500 hover:text-white;
-}
-
-.title_background {
-  @apply font-bold text-xl m-3 w-full text-center;
-}
-
-.card_title_background {
-  @apply flex justify-between sm:px-7 lg:px-12 bg-green-600 shadow-lg text-gray-50 rounded-lg sm:w-full lg:w-2/5 mx-auto mb-5;
+.input_filter {
+  @apply border-2 border-gray-400 mx-2 rounded-xl w-full py-2 pl-10;
 }
 
 /*-----------------RegisterDoctor-------------------*/
@@ -109,4 +109,13 @@
 
 .input_style {
   @apply border-2 border-gray-400 w-full  p-2 rounded-xl;
+}
+
+/*-----------------Loading-------------------*/
+.loading_bg {
+  @apply flex flex-col text-center mx-auto;
+}
+
+.loading_text {
+  @apply text-4xl mt-20 font-my-font font-extrabold;
 }

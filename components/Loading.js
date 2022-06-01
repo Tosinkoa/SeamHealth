@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Loading = () => {
   return (
-    <div className="flex flex-col text-center mx-auto ">
-      <p className="text-4xl  mt-20 font-my-font font-extrabold">Loading...</p>
+    <div className="loading_bg">
+      <p className="loading_text">Loading...</p>
       <div>
         <Image
           src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif"
