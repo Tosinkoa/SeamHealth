@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/*----------------COMPONENT-----------------COMPONENT------------------COMPONENT-----------------*/
+
 /*-----------------Table-------------------*/
+
+.table_main_background {
+  @apply overflow-hidden border sm:shadow-md md:shadow-lg dark:shadow-gray-600 sm:mx-4 md:mx-10 lg:mx-28 my-6 rounded-lg pt-6;
+}
+
+.sec_table_main_background {
+  @apply md:w-11/12 sm:w-full mt-10 mx-auto my-10;
+}
 
 .table_title_background {
   @apply font-logo-font flex flex-col justify-center mx-auto;
@@ -48,11 +58,55 @@
   @apply lg:px-6 sm:px-2 py-2 text-left max-w-fit;
 }
 
+.main_table_data {
+  @apply lg:px-4 sm:px-2 py-2 text-left w-1/5 break-all;
+}
+
 .table_detail {
   @apply font-medium inline-flex text-blue-500 hover:underline;
 }
 
-/*-----------------Table-------------------*/
+/*-----------------TableFilter-------------------*/
+.table_filter_bg {
+  @apply flex sm:w-11/12 lg:w-8/12 mt-5 mx-auto relative;
+}
+
+.search_icon{
+@apply absolute text-2xl top-2.5 left-5
+}
+
+.input_filter{
+@apply border-2 border-gray-400 mx-2 rounded-xl w-full py-2 pl-10
+}
+
+/*-----------------CardTitle-------------------*/
+
+.register_doctor_button {
+  @apply border rounded-md w-24 px-4 py-2 font-bold text-center bg-green-600 border-gray-500 text-gray-50 shadow-md hover:bg-green-500 hover:text-white;
+}
+
+.title_background {
+  @apply font-bold text-xl m-3 w-full text-center;
+}
+
+.card_title_background {
+  @apply flex justify-between sm:px-7 lg:px-12 bg-green-600 shadow-lg text-gray-50 rounded-lg sm:w-full lg:w-2/5 mx-auto mb-5;
+}
+
+/*-----------------RegisterDoctor-------------------*/
+
 .mylabel {
   @apply font-bold mb-2;
+}
+
+.register_doctor_background {
+  @apply border border-gray-300 sm:shadow-md md:shadow-lg sm:mx-4 md:mx-10 lg:mx-28 my-6 rounded-md dark:shadow-gray-600 py-6;
+}
+
+.form_background {
+  @apply grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-11/12 mx-auto gap-5 py-4;
+}
+
+.input_style {
+  @apply border-2 border-gray-400 w-full  p-2 rounded-xl;
 }
